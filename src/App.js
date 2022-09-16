@@ -1,12 +1,12 @@
 import OuterFrame from "./containers/outerFrame/OuterFrame";
-import Main from "./containers/main/Main";
+import Home from "./pages/home/Home";
 import "./App.css";
 
 function App() {
 	return (
 		<div className="App">
 			<OuterFrame />
-			<Main />
+			<Home />
 		</div>
 	);
 }

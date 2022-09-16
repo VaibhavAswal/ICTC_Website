@@ -1,15 +1,17 @@
 import { Top, Right, Left } from "../../components/outerFrame/OuterFrame";
+import logo from "../../images/logo.jpg";
 import "./OuterFrame.css";
 
 const OuterFrame = () => {
 	return (
-		<div className="OuterFrame">
-			<Top />
-			<div className="OuterFrameMiddle">
+		<>
+			<div className="OuterFrame">
+				<Top />
 				<Left />
 				<Right />
 			</div>
-		</div>
+			<img src={logo} className="fixedLogo" alt="" />
+		</>
 	);
 };
 

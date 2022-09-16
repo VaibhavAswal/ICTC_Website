@@ -1,0 +1,49 @@
+.Main {
+	margin: 5rem 5rem 0 5rem;
+	width: calc(100vw - 10rem);
+	height: calc(100vh - 5rem);
+	display: flex;
+}
+
+.MainLeft {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 1rem 0 4rem;
+	gap: 2rem;
+}
+
+.MainLeft > h1 {
+	font-size: 4rem;
+	font-weight: 300;
+	color: rgb(50, 72, 97);
+}
+
+.MainLeft > h1::before {
+	content: "";
+	width: 5rem;
+	display: block;
+	height: 3px;
+	margin-bottom: -0.4rem;
+	background: linear-gradient(90deg, var(--color-1) 70%, var(--color-2) 70%);
+}
+
+.MainLeft > p {
+	font-size: 1.25rem;
+	color: rgb(50, 72, 97);
+	font-weight: 400;
+}
+
+.MainLeft > button {
+	height: 3rem;
+	width: 10rem;
+	border-radius: 15px;
+	border: 1px solid black;
+}
+
+.MainRight {
+	width: 100%;
+	height: 100%;
+}
