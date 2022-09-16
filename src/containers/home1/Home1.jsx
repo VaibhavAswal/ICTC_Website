@@ -16,7 +16,7 @@ const Main = () => {
 				</h1>
 				<p>
 					iNEURON - We are society from another Dimension. Visit EL from
-					Stranger Things to know more. If she doesn't tell contact @Deepraj
+					Stranger Things to know more. If she doesn't tell contact @thor
 				</p>
 				<button>Join Us</button>
 			</div>

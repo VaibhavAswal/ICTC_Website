@@ -124,3 +124,32 @@
 	border-left: 1px solid rgba(50, 72, 97, 0.27);
 	z-index: 100;
 }
+
+@media (max-width: 768px) {
+	.OuterFrameTop {
+		flex-flow: row wrap;
+	}
+	.OuterFrameTop > .nav {
+		display: none;
+	}
+	.OuterFrameTop > .logo {
+		border-right: 1px solid rgba(50, 72, 97, 0.27);
+	}
+	.OuterFrameTop > .menu {
+		border-left: 1px solid rgba(50, 72, 97, 0.27);
+	}
+	.OuterFrameLeft {
+		display: none;
+	}
+	.OuterFrameRight {
+		display: none;
+	}
+}
+@media (max-width: 859px) {
+	.OuterFrameTop > .nav {
+		gap: 0rem;
+	}
+	.OuterFrameTop > .nav > div > a {
+		padding: 0 0.9rem;
+	}
+}
