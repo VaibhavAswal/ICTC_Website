@@ -1,0 +1,35 @@
+.UserCard {
+	display: flex;
+	flex-direction: column;
+	width: 10rem;
+	overflow: hidden;
+	box-shadow: 5px 5px 12px #666666, -5px -5px 12px #ffffff;
+	padding: 0 0 1rem 0;
+	border-radius: 15px;
+}
+
+.UserCard > img {
+	height: 10rem;
+	width: 10rem;
+	margin-bottom: 0.25rem;
+	object-fit: cover;
+}
+
+.UserCard > h1 {
+	font-size: 1.25rem;
+	width: 90%;
+	overflow: hidden;
+	font-weight: 400;
+	letter-spacing: 0.25px;
+	white-space: nowrap;
+	margin-left: 0.5rem;
+	color: var(--color-2);
+}
+
+.UserCard > p {
+	font-size: 0.8rem;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	white-space: nowrap;
+	margin-left: 0.5rem;
+}

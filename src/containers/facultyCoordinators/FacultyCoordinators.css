@@ -1,0 +1,62 @@
+.FacultyCoordinators {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 5rem 0 5rem;
+	width: calc(100vw - 10rem);
+	min-height: calc(100vh - 5rem);
+}
+
+.FacultyCoordinators > h1 {
+	font-size: 3rem;
+	font-weight: 300;
+}
+
+.FacultyCoordinators > h1::before {
+	content: "";
+	width: 3rem;
+	display: block;
+	height: 2.5px;
+	margin-bottom: -0.4rem;
+	background: linear-gradient(90deg, var(--color-1) 70%, var(--color-2) 70%);
+}
+
+.FacultyCoordinatorsChild {
+	display: flex;
+	margin-top: 5rem;
+	gap: 4rem;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width: 768px) {
+	.FacultyCoordinators > h1 {
+		margin-bottom: 0.2rem;
+		font-size: 2rem;
+	}
+	.FacultyCoordinators > h1::before {
+		content: "";
+		width: 2rem;
+		display: block;
+		height: 1.5px;
+		margin-bottom: -0.4rem;
+		background: linear-gradient(90deg, var(--color-1) 70%, var(--color-2) 70%);
+	}
+	.FacultyCoordinators {
+		margin: 0;
+		padding: 1rem;
+		width: 100%;
+	}
+	.FacultyCoordinatorsChild {
+		margin-top: 1rem;
+	}
+	.FacultyCoordinatorsChild > div {
+		width: 18rem;
+	}
+	.FacultyCoordinatorsChild > div > img {
+		width: 18rem;
+		height: 18rem;
+	}
+}

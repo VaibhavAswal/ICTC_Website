@@ -1,16 +1,72 @@
 .Home2 {
-	margin: 5rem 5rem 0 5rem;
+	margin: 0 5rem 0 5rem;
 	width: calc(100vw - 10rem);
-	height: calc(100vh - 5rem);
+	min-height: calc(100vh - 5rem);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
+}
+.Home2Left {
+	min-height: calc(100vh - 5rem);
+	width: 100%;
+}
+
+.Home2Left > img {
+	width: 100%;
+	height: 100%;
+	min-height: calc(100vh - 5rem);
+	object-fit: cover;
+}
+
+.Home2Right {
+	height: 100%;
+	padding: 5rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 2rem;
+}
+
+.Home2Right > h1 {
+	font-size: 3rem;
+	font-weight: 300;
+}
+
+.Home2Right > h1::before {
+	content: "";
+	width: 3rem;
+	display: block;
+	height: 2.5px;
+	margin-bottom: -0.4rem;
+	background: linear-gradient(90deg, var(--color-1) 70%, var(--color-2) 70%);
+}
+
+.Home2Right > p {
+	font-size: 1.25rem;
 }
 @media (max-width: 768px) {
 	.Home2 {
 		margin: 0;
-		margin-top: 5rem;
+		margin-top: 4rem;
 		width: 100vw;
+		padding: 0;
+		flex-direction: column;
+	}
+	.Home2Right {
+		padding: 3rem;
+	}
+	.Home2Left {
+		min-height: 0;
+	}
+	.Home2Left > img {
+		min-height: 0;
+	}
+}
+@media (min-width: 769px) and (max-width: 1047px) {
+	.Home2Right {
 		padding: 2rem;
 	}
 }

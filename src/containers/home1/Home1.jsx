@@ -8,11 +8,11 @@ const Main = () => {
 		<div className="Main">
 			<div className="MainLeft">
 				<h1>
-					Connect
+					<span style={{ color: "var(--color-1)" }}>Connect</span>
 					<br />
-					Collaborate
+					<span style={{ color: "var(--color-2)" }}>Collaborate</span>
 					<br />
-					Solve
+					<span style={{ color: "var(--color-1)" }}>Solve</span>
 				</h1>
 				<p>
 					iNEURON - We are society from another Dimension. Visit EL from

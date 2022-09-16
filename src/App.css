@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-:root{
-	--text-color: color: rgb(50, 72, 97);
+:root {
+	--text-color: rgb(50, 72, 97);
 	--color-1: #e68c1c;
 	--color-2: #24316c;
 }
@@ -12,7 +12,8 @@
 	box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
 	color: var(--text-color);
 	font-family: "Roboto Slab";
 	scroll-behavior: smooth;

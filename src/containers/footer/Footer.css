@@ -1,0 +1,19 @@
+.Footer {
+	border-top: 1px solid rgba(50, 72, 97, 0.27);
+	z-index: 100;
+	padding: 1rem 5rem 1rem 5rem;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.Footer > h3 {
+	font-size: 0.8rem;
+	font-weight: 300;
+}
+@media (max-width: 768px) {
+	.Footer {
+		padding: 1rem 0;
+	}
+}

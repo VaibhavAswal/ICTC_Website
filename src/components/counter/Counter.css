@@ -1,0 +1,32 @@
+.Counter {
+	padding: 5rem 6.2rem 7rem 6.2rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 3rem;
+	flex-flow: row nowrap;
+	flex-wrap: wrap;
+	height: 100%;
+	overflow: hidden;
+}
+
+.counterChild {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.counterChild > h1 {
+	font-size: 3rem;
+	font-weight: 300;
+}
+.counterChild > p {
+	font-size: 1.15rem;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+}
+@media (max-width: 768px) {
+	.Counter {
+		padding: 5rem 2rem 7rem 2rem;
+	}
+}
