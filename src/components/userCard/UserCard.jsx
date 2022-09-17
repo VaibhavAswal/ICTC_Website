@@ -18,22 +18,22 @@ const UserCard = (props) => {
 			</div>
 			<ul className="social">
 				<li>
-					<a href="https://codepen.io/collection/XdWJOQ/" aria-hidden="true">
+					<a href="https://tollygram.vaibhavaswal.codes/" aria-hidden="true">
 						<FaFacebookF />
 					</a>
 				</li>
 				<li>
-					<a href="https://codepen.io/collection/XdWJOQ/" aria-hidden="true">
+					<a href="https://tollygram.vaibhavaswal.codes/" aria-hidden="true">
 						<FaTwitter />
 					</a>
 				</li>
 				<li>
-					<a href="https://codepen.io/collection/XdWJOQ/" aria-hidden="true">
+					<a href="https://tollygram.vaibhavaswal.codes/" aria-hidden="true">
 						<FaInstagram />
 					</a>
 				</li>
 				<li>
-					<a href="https://codepen.io/collection/XdWJOQ/" aria-hidden="true">
+					<a href="https://tollygram.vaibhavaswal.codes/" aria-hidden="true">
 						<FaLinkedinIn />
 					</a>
 				</li>
