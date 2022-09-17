@@ -5,7 +5,7 @@ import "./FacultyCoordinators.css";
 const FacultyCoordinators = () => {
 	return (
 		<div className="FacultyCoordinators">
-			<h1>Faculty Coordinators</h1>
+			<h1 className="FacultyCoordinatorsH1">Faculty Coordinators</h1>
 			<div className="FacultyCoordinatorsChild">
 				<UserCard
 					image={user}

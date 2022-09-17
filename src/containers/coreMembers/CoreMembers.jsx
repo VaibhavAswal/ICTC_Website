@@ -42,7 +42,7 @@ const CoreMembers = () => {
 					minima, accusantium perferendis culpa nisi quia labore veniam
 					pariatur!
 				</div>
-				<button>Contact Us</button>
+				<button className="CoreMembersButton">Contact Us</button>
 			</div>
 		</div>
 	);

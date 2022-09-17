@@ -7,18 +7,25 @@ const Main = () => {
 	return (
 		<div className="Main">
 			<div className="MainLeft">
-				<h1>
+				<h1 className="MainLeftH1">
 					<span style={{ color: "var(--color-1)" }}>Connect</span>
 					<br />
 					<span style={{ color: "var(--color-2)" }}>Collaborate</span>
 					<br />
 					<span style={{ color: "var(--color-1)" }}>Solve</span>
 				</h1>
-				<p>
+				<p className="MainLeftP">
 					iNEURON - We are society from another Dimension. Visit EL from
 					Stranger Things to know more. If she doesn't tell contact @thor
 				</p>
-				<button>Join Us</button>
+				<a
+					href="https://forms.gle/2SJwxjnX9Ld5o14J8"
+					target="_blank"
+					className="MainLeftButton"
+					rel="noreferrer"
+				>
+					Join Us
+				</a>
 			</div>
 			<div className="MainRight">
 				<Lottie

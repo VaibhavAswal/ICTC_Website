@@ -10,6 +10,8 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	user-select: none;
+	user-select: none;
 }
 
 html,
@@ -17,4 +19,24 @@ body {
 	color: var(--text-color);
 	font-family: "Roboto Slab";
 	scroll-behavior: smooth;
+}
+
+.hidden {
+	display: none;
+}
+
+*::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #c4c4c4;
+}
+
+*::-webkit-scrollbar {
+	width: 2px;
+	height: 3px;
+	background-color: #bdbdbd;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: var(--color-1);
 }

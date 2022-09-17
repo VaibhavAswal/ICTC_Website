@@ -13,9 +13,20 @@
 	z-index: 1000;
 	background: rgb(255, 255, 255);
 	z-index: 100;
+	flex-direction: column;
 }
 
-.OuterFrameTop > .logo {
+.OuterFrameTopChild1 {
+	display: flex;
+	justify-content: space-between;
+	height: 5rem;
+	overflow: visible;
+	gap: 0px;
+	width: 100%;
+	z-index: 1000;
+}
+
+.OuterFrameTopChild1 > .logo {
 	width: 5rem;
 	height: 5rem;
 	cursor: pointer;
@@ -24,7 +35,7 @@
 	transition: all 0.5s ease-in-out 0s;
 }
 
-.OuterFrameTop > .nav {
+.OuterFrameTopChild1 > .nav {
 	gap: 0.5rem;
 	display: flex;
 	justify-content: center;
@@ -34,28 +45,32 @@
 	overflow: hidden;
 }
 
-.OuterFrameTop > .nav > div {
+.OuterFrameTopChild1 > .nav > div {
 	border: 1px solid transparent;
 }
 
-.OuterFrameTop > .nav > div > a {
+.OuterFrameTopChild1 > .nav > div > p {
 	cursor: pointer;
 	margin-bottom: -1px;
 	font-size: 1.05rem;
 	letter-spacing: -0.1mm;
 	transition: all 0.5s ease-in-out 0s;
-	height: 5rem;
-	line-height: 5rem;
-	width: 100%;
-	padding: 0px 1rem;
+	width: min-content;
+	margin: 0px 1rem;
 	text-align: center;
 	text-decoration: none;
 	text-transform: capitalize;
 	color: rgb(50, 72, 97);
 	font-weight: 400;
+	height: 1.5rem;
 }
 
-.OuterFrameTop > .menu {
+.OuterFrameTopChild1 > .nav > div > .active {
+	border-bottom: 2px solid var(--color-2);
+	color: var(--color-1);
+}
+
+.OuterFrameTopChild1 > .menu {
 	transition: all 0.5s ease-in-out 0s;
 	font-size: 1.75rem;
 	width: 5rem;
@@ -66,6 +81,30 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.OuterFrameTopChild2 {
+	width: 100%;
+	background: white;
+	border-bottom: 1px solid rgba(50, 72, 97, 0.27);
+	height: 1.7rem;
+	display: none;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1rem;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	gap: 2rem;
+}
+.OuterFrameTopChild2 > div {
+	font-size: 0.9rem;
+	color: var(--color-2);
+	line-height: 0.9rem;
+}
+
+.OuterFrameTopChild2 > .active {
+	border-bottom: 2px solid var(--color-2);
+	color: var(--color-1);
 }
 
 .OuterFrameLeft {
@@ -131,18 +170,26 @@
 		flex-flow: row wrap;
 		height: 4rem;
 	}
-	.OuterFrameTop > .nav {
+	.OuterFrameTopChild1 {
+		flex-flow: row wrap;
+		height: 4rem;
+		box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.25);
+	}
+	.OuterFrameTopChild1 > .nav {
 		display: none;
 	}
-	.OuterFrameTop > .logo {
+	.OuterFrameTopChild1 > .logo {
 		border-right: 1px solid rgba(50, 72, 97, 0.27);
 		height: 4rem;
 		width: 4rem;
 	}
-	.OuterFrameTop > .menu {
+	.OuterFrameTopChild1 > .menu {
 		width: 4rem;
 		height: 4rem;
 		border-left: 1px solid rgba(50, 72, 97, 0.27);
+	}
+	.OuterFrameTopChild2 {
+		display: flex;
 	}
 	.OuterFrameLeft {
 		display: none;
@@ -152,10 +199,10 @@
 	}
 }
 @media (max-width: 859px) {
-	.OuterFrameTop > .nav {
+	.OuterFrameTopChild1 > .nav {
 		gap: 0rem;
 	}
-	.OuterFrameTop > .nav > div > a {
+	.OuterFrameTopChild1 > .nav > div > a {
 		padding: 0 0.9rem;
 	}
 }

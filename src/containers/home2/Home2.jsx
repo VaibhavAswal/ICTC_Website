@@ -8,8 +8,8 @@ const Home2 = () => {
 				<img src={img} alt="" />
 			</div>
 			<div className="Home2Right">
-				<h1>Who we are</h1>
-				<p>
+				<h1 className="Home2RightH1">Who we are</h1>
+				<p className="Home2RightP">
 					WE are some awesome Lorem ipsum dolor sit amet consectetur adipisicing
 					elit. Impedit, corporis. Incidunt, modi natus. Inventore, est
 					asperiores temporibus voluptatibus ipsa quam error sint natus, saepe,
