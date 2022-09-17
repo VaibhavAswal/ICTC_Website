@@ -79,3 +79,17 @@
 		font-size: 3rem;
 	}
 }
+.pulse:hover,
+.pulse:focus {
+	animation: pulse 1s 2;
+	box-shadow: 0 0 0 1em transparent;
+}
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 var(--color-1);
+	}
+}
+.pulse {
+	width: min-content;
+	border-radius: 15px;
+}

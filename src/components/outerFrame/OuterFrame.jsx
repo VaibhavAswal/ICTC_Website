@@ -10,7 +10,10 @@ export const Top = () => {
 	const path = window.location.pathname;
 
 	useEffect(() => {
-		path === "/" ? console.log() : setnavVisible(true);
+		const fsetnavVisible = () => {
+			setnavVisible(true);
+		};
+		path === "/" ? console.log() : fsetnavVisible(true);
 		function showNav() {
 			// When the scroll is greater than 50 viewport height, add the headerVisible class to the nav tag
 			if (this.scrollY >= 50) {
@@ -39,6 +42,16 @@ export const Top = () => {
 					<div>
 						<p
 							onClick={() => {
+								navigate("/events");
+							}}
+							className={path === "/events" ? "active" : ""}
+						>
+							Events
+						</p>
+					</div>
+					<div>
+						<p
+							onClick={() => {
 								navigate("/members");
 							}}
 							className={path === "/members" ? "active" : ""}
@@ -49,11 +62,11 @@ export const Top = () => {
 					<div>
 						<p
 							onClick={() => {
-								navigate("/projects");
+								navigate("/gallery");
 							}}
-							className={path === "/projects" ? "active" : ""}
+							className={path === "/gallery" ? "active" : ""}
 						>
-							Projects
+							Gallery
 						</p>
 					</div>
 					<div>
@@ -64,16 +77,6 @@ export const Top = () => {
 							className={path === "/achievements" ? "active" : ""}
 						>
 							Achievements
-						</p>
-					</div>
-					<div>
-						<p
-							onClick={() => {
-								navigate("/gallery");
-							}}
-							className={path === "/gallery" ? "active" : ""}
-						>
-							Gallery
 						</p>
 					</div>
 				</div>
@@ -92,20 +95,21 @@ export const Top = () => {
 				</div>
 				<div
 					onClick={() => {
+						navigate("/events");
+					}}
+					className={path === "/events" ? "active" : ""}
+				>
+					Events
+				</div>
+				<div
+					onClick={() => {
 						navigate("/members");
 					}}
 					className={path === "/members" ? "active" : ""}
 				>
 					Members
 				</div>
-				<div
-					onClick={() => {
-						navigate("/achievments");
-					}}
-					className={path === "/achievments" ? "active" : ""}
-				>
-					Achievments
-				</div>
+
 				<div
 					onClick={() => {
 						navigate("/gallery");
@@ -113,6 +117,14 @@ export const Top = () => {
 					className={path === "/gallery" ? "active" : ""}
 				>
 					Gallery
+				</div>
+				<div
+					onClick={() => {
+						navigate("/achievements");
+					}}
+					className={path === "/achievements" ? "active" : ""}
+				>
+					Achievements
 				</div>
 			</div>
 		</div>
@@ -124,17 +136,29 @@ export const Left = () => {
 		<div className="OuterFrameLeft">
 			<h1 className="OuterFrameLeftChild4">FOLLOW US</h1>
 			<div className="OuterFrameLeftChild3">
-				<a href="/no" target="_blank">
+				<a
+					href="https://www.instagram.com/ictc.ditu/"
+					target="_blank"
+					rel="noreferrer"
+				>
 					INSTAGRAM
 				</a>
 			</div>
 			<div className="OuterFrameLeftChild2">
-				<a href="/no" target="_blank">
+				<a
+					href="https://www.instagram.com/ictc.ditu/"
+					target="_blank"
+					rel="noreferrer"
+				>
 					LINKEDIN
 				</a>
 			</div>
 			<div className="OuterFrameLeftChild1">
-				<a href="/no" target="_blank">
+				<a
+					href="https://www.instagram.com/ictc.ditu/"
+					target="_blank"
+					rel="noreferrer"
+				>
 					TWITTER
 				</a>
 			</div>

@@ -22,15 +22,16 @@ const Counter = () => {
 			}
 		}
 
-		window.addEventListener(
-			"scroll",
-			function (event) {
-				if (!loaded && isInViewPort()) {
-					setloaded(true);
-				}
-			},
-			false
-		);
+		!loaded &&
+			window.addEventListener(
+				"scroll",
+				function (event) {
+					if (!loaded && isInViewPort()) {
+						setloaded(true);
+					}
+				},
+				false
+			);
 	}, []);
 	useEffect(() => {
 		function constant(duration, range, current) {

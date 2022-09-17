@@ -2,7 +2,7 @@ import UserCard from "../../components/userCard/UserCard";
 import user from "../../images/user.png";
 import "./CoreMembers.css";
 
-const CoreMembers = () => {
+const CoreMembers = (props) => {
 	return (
 		<div>
 			<div className="CoreMembers">
@@ -36,13 +36,22 @@ const CoreMembers = () => {
 					<UserCard image={user} name="xxx xxx" designation="Core Member" />
 					<UserCard image={user} name="xxx xxx" designation="Core member" />
 				</div>
-				<div className="CoreMembersText">
-					We Do What We Do Lorem ipsum dolor, sit amet consectetur adipisicing
-					elit. Tenetur, fugit atque facere accusamus aperiam perspiciatis, iste
-					minima, accusantium perferendis culpa nisi quia labore veniam
-					pariatur!
-				</div>
-				<button className="CoreMembersButton">Contact Us</button>
+				{props.home && (
+					<>
+						<div className="CoreMembersText">
+							We Do What We Do Lorem ipsum dolor, sit amet consectetur
+							adipisicing elit. Tenetur, fugit atque facere accusamus aperiam
+							perspiciatis, iste minima, accusantium perferendis culpa nisi quia
+							labore veniam pariatur!
+						</div>
+						{/* button */}
+						<div className="wrapperbutton CoreMembersButton">
+							<a href="/contact">
+								<span>Contact Us</span>
+							</a>
+						</div>
+					</>
+				)}
 			</div>
 		</div>
 	);

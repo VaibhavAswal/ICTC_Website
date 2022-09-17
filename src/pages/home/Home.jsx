@@ -11,7 +11,7 @@ const Home = () => {
 			<Home2 />
 			<Counter />
 			<FacultyCoordinators />
-			<CoreMembers />
+			<CoreMembers home={true} />
 		</>
 	);
 };

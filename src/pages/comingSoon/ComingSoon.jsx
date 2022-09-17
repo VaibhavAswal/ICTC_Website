@@ -2,7 +2,7 @@ import "./ComingSoon.css";
 
 const ComingSoon = () => {
 	return (
-		<div className="MembersPage">
+		<div className="ComingSoon">
 			<h1>
 				This page is <span style={{ color: "var(--color-2)" }}>Under</span>
 				<span style={{ color: "var(--color-1)" }}>Construction</span>

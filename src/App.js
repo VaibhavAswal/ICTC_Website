@@ -6,6 +6,9 @@ import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import ComingSoon from "./pages/comingSoon/ComingSoon";
+import Members from "./pages/members/Members";
+import Events from "./pages/events/Events";
+import Gallery from "./pages/gallery/Gallery";
 
 const sr = ScrollReveal({
 	distance: "60px",
@@ -77,11 +80,14 @@ function App() {
 			reset: true,
 			duration: 2500,
 		});
-		sr.reveal(`.counterChild, .CoreMembersText, .CoreMembersButton`, {
-			origin: "bottom",
-			reset: true,
-			duration: 1500,
-		});
+		sr.reveal(
+			`.counterChild, .CoreMembersText, .CoreMembersButton, .eventsChild`,
+			{
+				origin: "bottom",
+				reset: true,
+				duration: 1500,
+			}
+		);
 		sr.reveal(`.UserCard`, {
 			origin: "bottom",
 			reset: true,
@@ -99,6 +105,10 @@ function App() {
 			<OuterFrame />
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="/members" element={<Members />} />
+				<Route path="/events" element={<Events />} />
+				<Route path="/gallery" element={<Gallery />} />
+				<Route path="/achievements" element={<ComingSoon />} />
 				<Route path="/:id" element={<ComingSoon />} />
 			</Routes>
 			<Footer />

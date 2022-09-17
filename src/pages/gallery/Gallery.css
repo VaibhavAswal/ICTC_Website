@@ -1,0 +1,73 @@
+.GalleryPage {
+	margin: 6rem 5rem 0 5rem;
+	min-width: calc(100vw - 10rem);
+	min-height: calc(100vh - 5rem);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.GalleryPage > h1 {
+	font-size: 3rem;
+	font-weight: 300;
+}
+
+@media (max-width: 768px) {
+	.GalleryPage {
+		margin: 0;
+		margin-top: 7rem;
+		width: 100vw;
+	}
+}
+
+.gallery {
+	display: flex;
+	padding: 2px;
+	transition: 0.3s;
+}
+.gallery:hover .gallery__image {
+	filter: grayscale(1);
+}
+.gallery__column {
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+}
+
+.gallery__thumb:hover .gallery__image {
+	filter: grayscale(0);
+}
+.gallery__thumbk:hover .gallery__caption {
+	opacity: 1;
+}
+.gallery__thumb {
+	position: relative;
+	margin: 2px;
+	overflow: hidden;
+}
+.gallery__image {
+	display: block;
+	width: 100%;
+	transition: 0.3s;
+}
+.gallery__image:hover {
+	transform: scale(1.1);
+}
+.gallery__caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 25px 15px 15px;
+	width: 100%;
+	font-family: "Raleway", sans-serif;
+	font-size: 16px;
+	color: white;
+	opacity: 0;
+	background: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.5) 0%,
+		rgba(255, 255, 255, 0) 100%
+	);
+	transition: 0.3s;
+}

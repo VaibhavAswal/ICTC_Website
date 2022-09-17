@@ -1,0 +1,9 @@
+.MembersPage {
+	margin-top: 5rem;
+}
+
+@media (max-width: 768px) {
+	.MembersPage {
+		margin-top: 8rem;
+	}
+}

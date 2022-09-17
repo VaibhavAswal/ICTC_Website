@@ -30,6 +30,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	padding: 1rem;
 }
 .CoreMembersText {
 	max-width: 25rem;
@@ -68,14 +69,61 @@
 	.CoreMembersChild {
 		margin-top: 1rem;
 	}
-	.CoreMembersChild > div {
-		width: 18rem;
-	}
 	.CoreMembersChild > div > img {
 		width: 18rem;
 		height: 18rem;
 	}
 	.CoreMembers > button {
 		margin-bottom: 0;
+	}
+}
+
+/* button */
+.wrapperbutton {
+	margin-top: 2rem;
+}
+
+.wrapperbutton a {
+	display: block;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	font-family: sans-serif;
+	text-decoration: none;
+	color: #333;
+	border: 2px solid #333;
+	letter-spacing: 2px;
+	text-align: center;
+	position: relative;
+	transition: all 0.35s;
+}
+
+.wrapperbutton a span {
+	position: relative;
+	z-index: 2;
+}
+
+.wrapperbutton a:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: var(--color-1);
+	transition: all 0.35s;
+}
+
+.wrapperbutton a:hover {
+	color: #fff;
+}
+
+.wrapperbutton a:hover:after {
+	width: 100%;
+}
+@media (max-width: 495px) {
+	.CoreMembersChild > div {
+		width: 18rem;
 	}
 }

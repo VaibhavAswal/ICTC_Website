@@ -1,0 +1,99 @@
+.EventsPage {
+	margin: 5rem 5rem 0 5rem;
+	min-width: calc(100vw - 10rem);
+	min-height: 60vh;
+	display: flex;
+	flex-direction: column;
+}
+.eventsBanner {
+	width: 100%;
+	height: 20rem;
+	position: relative;
+}
+.eventsBanner > img {
+	width: 100%;
+	object-fit: cover;
+	height: 20rem;
+}
+
+.eventsBanner > h1 {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 10rem;
+	margin-left: auto;
+	margin-right: auto;
+	width: min-content;
+	color: white;
+	font-size: 2.5rem;
+	font-weight: 800;
+	-webkit-text-stroke: 1px black;
+	-webkit-text-fill-color: white;
+}
+
+.events {
+	margin-top: 1rem;
+	display: flex;
+	padding: 4rem;
+	flex-wrap: wrap;
+	gap: 3rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.eventsChild {
+	width: 21rem;
+	height: 16rem;
+	border: 1px solid rgba(50, 72, 97, 0.46);
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	justify-content: flex-start;
+	align-items: flex-start;
+	position: relative;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.eventsChild > h1 {
+	font-size: 1.25rem;
+	font-weight: 400;
+	letter-spacing: 0.25px;
+	margin-bottom: 1rem;
+}
+
+.eventsChild > div {
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 0.8rem;
+}
+.eventsChild > div > svg {
+	font-size: 1.1rem;
+	margin-right: 0.25rem;
+}
+.eventsChild > p {
+	font-size: 1rem;
+	margin-bottom: 1.5rem;
+}
+@media (max-width: 768px) {
+	.EventsPage {
+		margin: 0;
+		margin-top: 5rem;
+		width: 100vw;
+	}
+}
+@media (max-width: 768px) {
+	.events {
+		width: 100%;
+		padding: 3rem 0;
+	}
+	.eventsChild {
+		width: 80vw;
+		height: max-content;
+		max-height: 16rem;
+	}
+}

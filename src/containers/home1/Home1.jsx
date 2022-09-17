@@ -18,14 +18,16 @@ const Main = () => {
 					iNEURON - We are society from another Dimension. Visit EL from
 					Stranger Things to know more. If she doesn't tell contact @thor
 				</p>
-				<a
-					href="https://forms.gle/2SJwxjnX9Ld5o14J8"
-					target="_blank"
-					className="MainLeftButton"
-					rel="noreferrer"
-				>
-					Join Us
-				</a>
+				<div className="pulse">
+					<a
+						href="https://forms.gle/2SJwxjnX9Ld5o14J8"
+						target="_blank"
+						className="MainLeftButton"
+						rel="noreferrer"
+					>
+						Join Us
+					</a>
+				</div>
 			</div>
 			<div className="MainRight">
 				<Lottie
