@@ -4,6 +4,7 @@
 	--text-color: rgb(50, 72, 97);
 	--color-1: #e68c1c;
 	--color-2: #24316c;
+	--background: #c4c4c4;
 }
 
 * {
@@ -27,13 +28,13 @@ body {
 
 *::-webkit-scrollbar-track {
 	border-radius: 10px;
-	background-color: #c4c4c4;
+	background-color: var(--background);
 }
 
 *::-webkit-scrollbar {
 	width: 2px;
 	height: 3px;
-	background-color: #bdbdbd;
+	background-color: var(--background);
 }
 
 *::-webkit-scrollbar-thumb {
